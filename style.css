@@ -357,8 +357,69 @@ border-radius: 10px;
 }
 }
 /* section3 */
+.section-3{
+    height:auto;
+    width:auto;
+    padding:0  100px;
+    border:2px solid red ;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.section-3-div-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+.ex-card{
+    /* width: 323px;
+    height: 218px; */
+position: relative;
+border-radius: 10px;
 
+}
+.ex-card img {
+    width: 100%;
+height: 100%;
+border-radius: 10px;
+filter: brightness(80%);
+}
+.ex-p1{
+    position: absolute;
+    margin-top: 20px;
+}
 
+.sec-3-row-1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 1rem 0;
+    border: 1px solid red;
+    gap: 20px;
+}
+.sec-3-row-2{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 20px;
+}
+@media screen and (max-width:576px) {
+    .section-5{
+        height:auto;
+        width:auto;
+        /* padding:0  100px; */
+        border:2px solid red ;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    
+    }
+    .sec-3-row-1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec-3-row-2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 /* section4 */
 .section-4{
@@ -367,6 +428,7 @@ border-radius: 10px;
     /* padding:0  100px; */
     border:2px solid red ;
     margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 .section-4-div1{
@@ -378,7 +440,7 @@ border-radius: 10px;
 .section-4-div2{
  background-color: #222222;
  width: auto;
- height: 500px;
+ height:auto;
  margin-bottom: 50px;
  display: flex;
  align-items: center;
@@ -394,6 +456,9 @@ border-radius: 10px;
     width: 550px;
     height: 400px;
     color: aliceblue;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
     border: 1px solid red;
     /* padding-left: 30px; */
 
@@ -401,6 +466,7 @@ border-radius: 10px;
 table{
     margin-top:0px ;
     font-size: 20px;
+    margin: 0 auto;
     font-weight: 300px;
     color: aliceblue;
     border: 1px solid grey;
@@ -418,13 +484,13 @@ td,th{
     color: white;
 font-size: 1.6rem;
 font-weight: 900;
-text-align: left;
+text-align: center;
 }
 
  .sec4-p {
     background-color: transparent;
 }
-input[type="text"],input[type="number"] ,select{
+input[type="text"],input[type="number"],select{
 border-radius: 5px;
 width: 200px;
  background-color: #222222;
@@ -437,15 +503,10 @@ align-items: center;
 border: 1px solid gray;
 margin-bottom: 20px;
 }
-.select{
-    display: flex;
-    background-color: #222222;
-}
-
 option,select{
     color: rgba(255, 255, 255, 0.6);
 }
-.input-container, .input-container2{
+.input-container, .input-container2,.input-container3{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -606,7 +667,7 @@ border-radius: 20px;
         }
         .member>h5{
           top: 210px;
-          left: 30px;
+          left: 40px;
           
         }
             
@@ -646,14 +707,14 @@ border-radius: 20px;
 
 /* section-6 */
 .section-6{
-    height:500px;
+    height:auto;
     width:auto;
     padding:40px  100px;
     border:2px solid red ;
     margin-top: 30px;
     background-color: #1A1A1A;
-
-    margin-bottom: 40px;
+    
+    margin-bottom: 20px;
 
 }
 
@@ -670,6 +731,12 @@ border-radius: 20px;
     color: aliceblue;
     background-color: transparent;
 }
+.row-2{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    background-color: transparent;
+}
 .section-6-div-2>h4{
     list-style: none;
     color: gray;
@@ -681,8 +748,7 @@ border-radius: 20px;
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 30%;
-      
+      align-content: flex-start;
     line-height: 30px; 
     margin-top: 40px;
     background-color: transparent;
@@ -726,12 +792,15 @@ text-align: left;
     text-align: left;
     align-content: flex-start;
 }
-
+.row-2{
+    flex-direction: column;
+    padding-left: 0%;
+}
 }
 /* responsibe responsile for tablet */
 @media screen and (min-width:577px) and (max-width:990px){
     .section-6{
-        height:500px;
+        height:auto;
         width:auto;
         margin: 0 auto;
         padding:0 80px;
@@ -745,7 +814,7 @@ text-align: left;
     .row-1{
         grid-template-columns: repeat(1, 1fr);
     }
-    .row2-{
+    .row-2{
         grid-template-columns: repeat(2, 1fr);
     }
 }
