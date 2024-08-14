@@ -198,7 +198,7 @@ padding: 10px;
         position: relative;
     }
     .btn-container{
-        width: 80%;
+        width: 100%;
         justify-content: center;
         gap: 20px;
     }
